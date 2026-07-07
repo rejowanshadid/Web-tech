@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+    body{
+   
+    margin: 30px;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+fieldset{
+    padding: 15px;
+}
+
+</style>
+    
+</head>
+<body>
+    <h1>Registration</h1>
+    <div class="container">
+            
+                <fieldset>
+                    <legend>General Information</legend>
+                    <label for="firstName">First Name</label>
+                    : <input type="text" id="firstName" name="firstName">
+                    <br><br>
+                    <label for="lastName">Last Name</label>
+                    : <input type="text" id="lastName" name="lastName">
+            
+                    <br><br>
+                    <label>Gender:</label>
+                    
+                        <input type="radio" id="male" name="Gender" value="male">
+                        <label for="male">Male</label>
+
+                        
+                        <input type="radio" id="female" name="Gender" value="female">
+                        <label for="female">Female</label>
+                        <br><br>
+
+                        <label for="fatherName">Father's Name</label>
+                    : <input type="text" id="fatherName" name="fatherName">
+                    <li>
+                                 <input type="file" id="file name">
+
+                            </li>
+                    <br><br>
+                    <label for="motherName">Mother Name</label>
+                    : <input type="text" id="motherName" name="motherName">
+            
+                    <br><br>
+                    <label for="bloodGroup">Blood Group</label>
+                    <select name="bloodGroup" id="bloodgroup">
+                            <option value ="A+">A+</option>
+                            <option value ="B+">B+</option>
+                            <option value ="AB+">AB+</option>
+                            <option value ="O+">O+</option>
+                            <option value ="A-">A-</option>
+                            <option value ="Ab-">AB-</option>
+                            <br><br>
+                        </select> 
+                    <br><br>
+                        <label for="Religion">Religion</label>
+                        <select name="Religion" id="Religion">
+                            <option value ="Muslim">Muslim</option>
+                            <option value ="Hindu">Hindu</option>
+                            <option value ="others">others</option>
+                </fieldset>
+            
+
+
+
+
+            
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="email"> Email</label>
+                    : <input type="text" id="email" name="email">
+                    <br><br>
+                    <label for="phone"> Phone</label>
+                    : <input type="text" id="email" name="email">
+                    <br><br>
+                    <label for="website"> Website</label>
+                    : <input type="website" id="email" name="website">
+            
+                    
+                    <fieldset><legend>Present Address</legend>
+                        <select name="country" id="country">
+                            <option value ="Bnagladesh">Bangladesh</option>
+                            <option value ="Nepal">Nepal</option>
+                            </select>
+                            <select name="division" id="division">
+                            <option value ="dhaka">Dhaka</option>
+                            <option value ="rangpur">Rangpur</option>
+                            </select>
+                            <br><br>
+
+                             <label for="road">Road/Street</label>
+
+
+
+                    <textarea name="id" name=""> </textarea>
+                            <br><br>
+                            <label for="postcode">post code</label>
+                    : <input type="text" id="post code" name="post code">
+                            
+                            
+            
+                            
+                        
+
+                    </fieldset>
+                    
+                    
+                    
+                    
+                </fieldset>
+            
+
+            
+                <fieldset>
+                    <legend>Account Information</legend>
+                    <label for="userName">User Name</label>
+                    : <input type="text" id="userName" name="userName">
+                    <br><br>
+                    <label for="password">Password</label>
+                    : <input type="text" id="password" name="password">
+                    <br><br>
+                    <label for="confirm password">Confirm Password</label>
+                    : <input type="text" id="confirm password" name="confirm password">
+                    <br><br>
+
+
+                </fieldset>
+                            <input type="submit">
+
+
+
+        
+
+</body>
+</html>
