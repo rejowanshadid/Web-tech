@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 style="text-align: center;">Registration Form</h1>
+
+<form onsubmit="return validate(this);">
+
+<table>
+    <tr>
+        <td>
+            <fieldset class="general-info">
+                <legend>General Information</legend>
+
+                <label for="firstName">First Name</label>
+                : <input type="text" id="firstName" name="firstName">
+                <span id="firstNameErrMsg"></span>
+
+                <br><br>
+
+                <label for="lastName">Last Name</label>
+                : <input type="text" id="lastName" name="lastName">
+                <span id="lastNameErrMsg"></span>
+
+                <br><br>
+
+                <label>Gender:</label>
+
+                <input type="radio" id="male" name="Gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="Gender" value="female">
+                <label for="female">Female</label>
+
+                <span id="genderErrMsg"></span>
+
+                <br><br>
+
+                <label for="fatherName">Father's Name</label>
+                : <input type="text" id="fatherName" name="fatherName">
+
+                <input type="file" id="fileName" class="file-box">
+
+                <br><br>
+
+                <label for="motherName">Mother Name</label>
+                : <input type="text" id="motherName" name="motherName">
+
+                <br><br>
+
+                <label for="bloodGroup">Blood Group</label>
+
+                <select name="bloodGroup" id="bloodgroup">
+                    <option>A+</option>
+                    <option>B+</option>
+                    <option>AB+</option>
+                    <option>O+</option>
+                    <option>A-</option>
+                    <option>AB-</option>
+                </select>
+
+                <br><br>
+
+                <label for="Religion">Religion</label>
+
+                <select name="Religion" id="Religion">
+                    <option>Muslim</option>
+                    <option>Hindu</option>
+                    <option>Others</option>
+                </select>
+
+            </fieldset>
+        </td>
+
+        <td>
+
+            <fieldset class="contact-info">
+
+                <legend>Contact Information</legend>
+
+                <label for="email">Email</label>
+                : <input type="text" id="email" name="email">
+
+                <br><br>
+
+                <label for="phone">Phone</label>
+                : <input type="text" id="phone" name="phone">
+
+                <br><br>
+
+                <label for="website">Website</label>
+                : <input type="text" id="website" name="website">
+
+                <br>
+
+                <label>Address:</label>
+
+                <fieldset class="present-address">
+
+                    <legend>Present Address</legend>
+
+                    <select name="country" id="country">
+                        <option>Bangladesh</option>
+                        <option>Nepal</option>
+                    </select>
+
+                    <select name="division" id="division">
+                        <option>Dhaka</option>
+                        <option>Rangpur</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="road">Road/Street:</label>
+
+                    <textarea id="road" name="road"
+                        placeholder="Road/street/city"></textarea>
+
+                    <br><br>
+
+                    <label for="postcode">Post Code</label>
+
+                    : <input type="text" id="postcode"
+                        name="postcode"
+                        placeholder="Post Code">
+
+                </fieldset>
+
+            </fieldset>
+
+        </td>
+
+        <td>
+
+            <fieldset class="account-info">
+
+                <legend>Account Information</legend>
+
+                <label for="userName">User Name</label>
+                : <input type="text" id="userName" name="userName">
+
+                <br><br>
+
+                <label for="password">Password</label>
+                : <input type="password" id="password" name="password">
+
+                <br><br>
+
+                <label for="confirmPassword">Confirm Password</label>
+                : <input type="password" id="confirmPassword"
+                    name="confirmPassword">
+
+                <br><br>
+
+            </fieldset>
+
+            <input type="submit" value="Register" class="register-btn">
+
+        </td>
+
+    </tr>
+</table>
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>

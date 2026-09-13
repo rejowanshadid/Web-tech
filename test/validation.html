@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Form Validation</title>
+</head>
+<body>
+
+	<form onsubmit="return validate(this);">
+		<label for="username">Username</label>
+		<input type="text" name="username" id="username">
+		<span id="unameErrMsg"></span>
+		<br><br>
+
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password">
+		<span id="passwordErrMsg"></span>	
+		<br><br>
+		<input type="submit">
+	</form>
+
+	<script>
+		function validate(p) {
+			const username = p.username.value;
+			const password = p.password.value;
+			const usernameErrMsg = document.getElementById("unameErrMsg");
+			const passwordErrMsg = document.getElementById("passwordErrMsg");
+			usernameErrMsg.innerHTML = "";
+			passwordErrMsg.innerHTML = "";
+			let flag = true;
+
+			if (username === "") {
+				usernameErrMsg.innerHTML = "Please fill up the username properly";
+				flag = false;
+			}
+			if (password === "") {
+				passwordErrMsg.innerHTML = "Please fill up the password properly";
+				flag = false;
+			}
+			return flag;
+		}
+	</script>
+
+</body>
+</html>

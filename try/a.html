@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign In </title>
+</head>
+<body>
+    <style>
+        body{background-color: rgb(139, 147, 218);}
+        .info{
+            boder:2px solid rgb(152, 25, 93);
+            border-color: brown;
+            background-image:url(logo.jpg);
+            background-size:contain;
+            
+
+        }
+        h1{
+            color: rgb(12, 24, 73);
+            font-style: initial;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align:center;
+            
+
+        }
+         input:focus,
+    select:focus,
+    textarea:focus{
+        background-color:  rgb(210, 236, 234);} 
+        .register-btn{
+            background-color: darkgreen;
+            margin-top:20px;
+        }
+        
+
+
+    </style>
+    <h1> FaceBook</h1>
+    <table>
+        <tr>
+            <td>
+                <fieldset class="info">
+                    <label for="name">Name</label>
+                    :<input type="text" id="name" name="name">
+                    <br><br>
+                    <label>Gender: </label>
+                    <input type="radio" id ="male" name="Gender" value="male">
+                    <label for ="male">Male</label>
+
+                    <input type="radio" id ="female" name="Gender" value="female">
+                    <label for ="female">Female</label>
+                    <br>
+
+
+                    <label for="Religion">Religion</label>
+                        <select name="Religion" id="Religion">
+                            <option value ="Muslim">Muslim</option>
+                            <option value ="Hindu">Hindu</option>
+                            <option value ="others">others</option>
+                            </select>
+                    
+
+
+                </fieldset>
+
+                  <input type="submit" value="Register" class="register-btn">
+
+
+            </td>
+            
+        </tr>
+    </table>
+    
+</body>
